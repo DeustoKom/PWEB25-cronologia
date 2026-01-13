@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>KRONOLOGIA ETXEBIZITZA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #timeline-embed {
+      width: 100%;
+      height: 650px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div id="timeline-embed"></div>
+
+  
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+  <script>
+    
+    var options = {
+      initial_zoom: 2,   // zoom inicial
+      font: "Default",   // fuente
+      lang: "es"         // idioma
+    };
+
+    
+    var googleSheet = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSp3cHUUdhZenA3gqa-erLZgmumgvUhwRIxEJZPAd4nFwadLDwZO5b0_73qi528sSRktpEz5mNySSFp/pubhtml";
+
+    
+    var timeline = new TL.Timeline('timeline-embed', googleSheet, options);
+  </script>
+
+</body>
+</html>
